@@ -1,0 +1,41 @@
+
+> hynsights@0.1.0 dev
+> next dev --turbopack --port 3000
+
+   ▲ Next.js 15.5.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.2:3000
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 792ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.6s
+ GET / 200 in 2788ms
+ ⚠ Cross origin request detected  to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /favicon.ico in 177ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 455ms
+ ✓ Compiled in 434ms
+ GET / 200 in 244ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 700ms
+ GET /apple-touch-icon-precomposed.png 404 in 776ms
+ GET /apple-touch-icon.png 404 in 78ms
+ GET / 200 in 90ms
+ GET / 200 in 71ms
+   Reload env: .env.local
+   Reload env: .env.local
+ GET / 200 in 174ms
+ GET / 200 in 31ms
+ GET / 200 in 73ms
+ GET / 200 in 34ms
+   Reload env: .env.local
+ GET / 200 in 186ms
+   Reload env: .env
+ GET / 200 in 270ms
+   Reload env: .env
