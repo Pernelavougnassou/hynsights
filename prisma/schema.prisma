@@ -13,3 +13,89 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  password      String?
+  name          String?
+  image         String?
+  bio           String?
+  role          Role      @default(USER)
+  articles      Article[]
+  comments      Comment[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Article {
+  id            String    @id @default(cuid())
+  title         String
+  slug          String    @unique
+  excerpt       String?
+  content       String
+  featuredImage String?
+  published     Boolean   @default(false)
+  featured      Boolean   @default(false)
+  views         Int       @default(0)
+  readingTime   String?
+  
+  author        User      @relation(fields: [authorId], references: [id])
+  authorId      String
+  
+  category      Category  @relation(fields: [categoryId], references: [id])
+  categoryId    String
+  
+  tags          Tag[]
+  comments      Comment[]
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  publishedAt   DateTime?
+  
+  @@index([slug])
+  @@index([published, featured])
+}
+
+model Category {
+  id            String    @id @default(cuid())
+  name          String    @unique
+  slug          String    @unique
+  description   String?
+  articles      Article[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Tag {
+  id            String    @id @default(cuid())
+  name          String    @unique
+  slug          String    @unique
+  articles      Article[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Comment {
+  id            String    @id @default(cuid())
+  content       String
+  article       Article   @relation(fields: [articleId], references: [id])
+  articleId     String
+  author        User      @relation(fields: [authorId], references: [id])
+  authorId      String
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Newsletter {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  active        Boolean   @default(true)
+  createdAt     DateTime  @default(now())
+}
+
+enum Role {
+  USER
+  AUTHOR
+  ADMIN
+}

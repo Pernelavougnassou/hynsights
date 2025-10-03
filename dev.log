@@ -40,3 +40,64 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
  GET / 200 in 270ms
    Reload env: .env
  GET / 200 in 276ms
+ ✓ Compiled in 753ms
+ ✓ Compiled in 523ms
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 611ms
+ ✓ Compiled in 170ms
+ ✓ Compiled in 181ms
+ ✓ Compiled in 85ms
+ ✓ Compiled in 38ms
+ ✓ Compiled in 52ms
+ ✓ Compiled in 52ms
+ ✓ Compiled in 72ms
+ ✓ Compiled in 187ms
+ ✓ Compiled in 65ms
+ ✓ Compiled in 48ms
+ ✓ Compiled in 42ms
+ ✓ Compiled in 29ms
+ ✓ Compiled in 38ms
+ ✓ Compiled in 32ms
+ ✓ Compiled in 104ms
+ ✓ Compiled in 47ms
+ ✓ Compiled in 67ms
+ ✓ Compiled in 145ms
+ ✓ Compiled in 85ms
+ ✓ Compiled in 59ms
+ ✓ Compiled in 38ms
+ ✓ Compiled in 66ms
+ ✓ Compiled in 191ms
+ ✓ Compiled in 66ms
+ ✓ Compiled in 111ms
+ ✓ Compiled in 87ms
+ ✓ Compiled in 95ms
+ ✓ Compiled in 59ms
+ ✓ Compiled in 745ms
+ ✓ Compiled middleware in 8ms
+ ✓ Compiled in 171ms
+ ✓ Compiled middleware in 8ms
+ ✓ Compiled middleware in 1ms
+ ✓ Compiled in 91ms
+ ✓ Compiled middleware in 2ms
+ ✓ Compiled in 70ms
+ ✓ Compiled middleware in 1ms
+ ✓ Compiled in 65ms
+ ✓ Compiled middleware in 2ms
+ ✓ Compiled middleware in 1ms
+ ✓ Compiled in 51ms
+ ✓ Compiled middleware in 10ms
+ ✓ Compiled middleware in 7ms
+ ✓ Compiled middleware in 13ms
+ ✓ Compiled middleware in 2ms
+ ✓ Compiled middleware in 7ms
+ ✓ Compiled middleware in 7ms
+ ✓ Compiled middleware in 4ms
+ ✓ Compiled middleware in 3ms
+ ✓ Compiled middleware in 2ms
+ ✓ Compiled middleware in 5ms
+ ✓ Compiled middleware in 5ms
+ ✓ Compiled middleware in 2ms
+ ✓ Compiled middleware in 4ms
+ ✓ Compiled middleware in 2ms
+ ✓ Compiled middleware in 4ms
+ ✓ Compiled middleware in 5ms
