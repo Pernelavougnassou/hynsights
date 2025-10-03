@@ -39,3 +39,4 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
    Reload env: .env
  GET / 200 in 270ms
    Reload env: .env
+ GET / 200 in 276ms
